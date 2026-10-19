@@ -1,0 +1,138 @@
+
+/* CSS Reset usando o caractere coringa -->* */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Váriaveis para a paleta de cores */
+:root{
+    --Cor-Marrom-escuro: #5f320ee8;
+    --Cor-Marrom-claro: #b07d52;
+    --Cor-Vinho: brown;
+    --Cor-Cinza:#ffffffb0;
+    --Cor-fundo-pagina:#ebd3adcb;
+    --Cor-Branco:#ffffff;
+    --Cor-Branco-secao:#ffffff;
+    --Cor-sombra: rgba(0, 0, 0, 0.2);
+    --Cor-Fundo-dica: #ecd78f;
+    --Cor-Borda-dica: #f0ad4e;
+    --Cor-borda-tabela: #5e574e57;
+    
+}
+
+
+
+/* Regra de Formatação */
+body{
+    font-family: Bree Serif; 
+    /* fonte do texto */
+    background-color: var(--Cor-fundo-pagina)
+}
+header{
+    background-color: var(--Cor-Marrom-escuro);
+    /* Cor do fundo */
+    color: var(--Cor-Cinza);
+    /* Cor da Letra */
+    text-align: center;
+    /* Alinhar o Texto */
+    padding: 40px 0px;
+    /* Margem interna: topo direita, baixo esquerda */
+}
+h1{
+   font-size: 60px;
+   /* tamanho da letra */
+}
+p{
+    font-size: 18px;
+    /* tamanho da letra */
+}
+img{
+    width: 30px; ;
+    
+}
+nav{
+    background-color: var(--Cor-Marrom-claro);
+    
+    /* margin-top: 1px;
+    margin-left: 30px; */
+    /* margin: 1px 30px 0px 30px;  */
+    /* top right botton left */
+    text-align: center;
+    padding: 12px;
+    font-size: 20px;
+
+    word-spacing: 25px;
+    /* da espaço entre as palavras */
+}
+
+main{
+    width: 900px;           /* Largura de um bloco(tag) */
+    margin: 0px auto;
+}
+
+
+section{
+    font-family: Bree Serif; 
+    margin-top: 30px;
+    background-color: var(--Cor-fundo-pagina);
+    padding: 30px;
+    box-shadow: 0px 2px 10px var(--Cor-sombra);
+     /*
+    box shadow:
+    deslocamento horizontal
+    deslocamneto vertical
+    desfoque
+    */
+    border-radius: 15px;
+    /* borda arredondada */
+   
+}
+
+section h2{
+ /* background-color:var(--Cor-Marrom-claro) ; */
+border-bottom: 3px solid var(--Cor-Marrom-claro);  /* isso faz uma borda */
+margin-bottom: 20px;
+font-size: 28px;
+padding-bottom: 8px;
+}
+
+section p{
+    margin-bottom: 15px;  /* distacia das linhas */
+    line-height: 150%;   /* distacia das linhas dentro do Paragrafo */
+   
+}
+
+ 
+
+/* Criar uma Classe em CSS */
+.dica{
+  background-color: var(--Cor-Fundo-dica);
+  border-left: 5px solid var(--Cor-Borda-dica);
+  padding: 15px 18px;
+  border-radius: 6px;
+}
+
+/* formatação da tabela */
+table{
+    width: 100%;
+    border-collapse: collapse;     /* Junta as bordas dos quadrados na tabela */
+    
+}
+th, td{
+    border: 1px solid var(--Cor-borda-tabela);
+    padding: 10px 14px;
+    text-align: left;
+}
+th{
+    background-color: var(--Cor-Marrom-claro);
+    color: var(--Cor-Branco-secao);
+}
+
+
+/*
+Font-family - propriedade
+Arial, Helvetica, sans-serif - valor da propriedade
+*/
+
+	
