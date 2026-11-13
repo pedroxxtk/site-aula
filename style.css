@@ -1,8 +1,13 @@
 
-/* CSS Reset usando o caractere coringa -->* */
+/* CSS Reset usando o caractere coringa -->*<-- */
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing:border-box;
+    /* 
+    Content box: soma todos os espaços e expande
+    border-box: soma todos os espaços e reduz (conteudo + espaços)
+    */
 }
 
 /* Váriaveis para a paleta de cores */
@@ -10,7 +15,7 @@
     --Cor-Marrom-escuro: #5f320ee8;
     --Cor-Marrom-claro: #b07d52;
     --Cor-Vinho: brown;
-    --Cor-Cinza:#ffffffb0;
+    --Cor-Cinza: #ffffffb0;
     --Cor-fundo-pagina:#ebd3adcb;
     --Cor-Branco:#ffffff;
     --Cor-Branco-secao:#ffffff;
@@ -18,7 +23,9 @@
     --Cor-Fundo-dica: #ecd78f;
     --Cor-Borda-dica: #f0ad4e;
     --Cor-borda-tabela: #5e574e57;
-    
+    --Cor-texto: #333333;
+    --Cor-texto-creme: #e6d7c3;
+    --Cor-marrom-hover: #935f3a;
 }
 
 
@@ -26,6 +33,15 @@
 /* Regra de Formatação */
 body{
     font-family: Bree Serif; 
+
+    /*
+Font-family - propriedade
+Arial, Helvetica, sans-serif - valor da propriedade
+*/
+
+
+
+
     /* fonte do texto */
     background-color: var(--Cor-fundo-pagina)
 }
@@ -59,11 +75,23 @@ nav{
     /* margin: 1px 30px 0px 30px;  */
     /* top right botton left */
     text-align: center;
-    padding: 12px;
+    padding: 20px 12px;
     font-size: 20px;
 
     word-spacing: 25px;
     /* da espaço entre as palavras */
+}
+
+nav a{
+   color: var(--Cor-Branco);
+   text-decoration: none;
+   padding: 8px 14px;
+   border-radius: 6px;
+}
+
+nav a:hover{
+     background-color: var(--Cor-marrom-hover);
+     /* quando passar o mouse no link */
 }
 
 main{
@@ -103,6 +131,21 @@ section p{
    
 }
 
+section ul, section ol{
+    margin-left: 20px;
+    margin-bottom: 12px;
+}
+
+section li{
+    margin-bottom: 5px;
+    font-weight: 400;
+}
+
+section hr{
+    border-top: 2px dotted var(--Cor-Marrom-claro);
+    margin: 10px 0px;
+}
+
  
 
 /* Criar uma Classe em CSS */
@@ -129,10 +172,52 @@ th{
     color: var(--Cor-Branco-secao);
 }
 
+section img{
+    width: 100%;
 
-/*
-Font-family - propriedade
-Arial, Helvetica, sans-serif - valor da propriedade
-*/
+}
+.horario-funcionamento th{
+    border: none;
+}
+
+.horario-funcionamento td{
+    border: none;
+    border-bottom: 1px solid var(--Cor-borda-tabela);
+}
+
+/* Formatação do formulario */
+form label{
+    display: block;        /* Trasforma a tag em um bloco, Antes label era inline */
+   margin: 10px 0px 4px;
+   color: var(--Cor-Marrom-escuro);
+
+}
+
+form input, form textarea{
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid var(--Cor-borda-tabela);
+}
+
+form button{
+    margin-top: 15px;
+    border: none;
+    background-color: var(--Cor-Marrom-claro);
+    color: var(--Cor-Branco);
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;           /* muda o cursor para a mãozinha */
+}
+
+form button:hover{
+    background-color: var(--Cor-marrom-hover);
+}
+
+
+
+
+
+
 
 	

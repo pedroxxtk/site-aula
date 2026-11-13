@@ -3,6 +3,7 @@
   <!-- a = Link -->
    <!-- alt+seta meche o codigo -->
     <!-- shift+alt+seta para baixo = duplicar uma linha -->
+     <!-- alt+z quenra a linha automaticamnete sem precisar ficar mexendo a barra -->
 
 
 
@@ -14,12 +15,14 @@
     <title>Aula de HTML e CSS</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="app.js">
+    <link rel="stylesheet" href="Imagem/">
+    
 </head>
 <body>
     <!-- Parte Superior  -->
-     <header>
-         <h1>Cafeteria Arábica</h1>
-         <p>O Melhor café da cidade<img src="924514.png" alt=""><div></div> Preparado de maneira artesanal desde 1741</p>
+     <header class="topo-animado">
+         <h1>Cafeteria Arábica&copy;</h1>
+         <p>O Melhor café da cidade<img src="Imagem/924514.png" alt="ima"><div></div> Preparado de maneira artesanal desde 1741</p>
      </header>
 
      
@@ -31,9 +34,12 @@
           <a href="#Cardápio">Cardápio</a>
           <a href="#Especiais">Especiais</a>
           <a href="#Ambiente">Ambiente</a>
-          <a href="#">Horário</a>
-          <a href="#">Reserva</a>
-          <a href="#">Contato</a>
+          <a href="#Horario">Horário</a>
+          <a href="#Reserva">Reserva</a>
+          <a href="#Contato">Contato</a>
+          <a href="avancado.html">Experiências &#10140;</a>
+
+          <!-- esta é a parte que faz o roda-pé funcionar com os atalhos -->
           
      </nav>
 
@@ -107,24 +113,89 @@
 
         <section id="Especiais">
             <h2>Especiais</h2>
+
+            <p>Confira algumas opções especiais da casa</p>
+
+            <ul>
+
+                <li><strong>Café gelado da casa</strong> - com calda de caramelo artesanal.</li>
+                <li><strong>Combo da Manhã</strong> - Cappuccino + pão de queijo por R$ 95,00.</li>
+                <li><strong>Cookie recheado</strong> - assado na hora, servido morno.</li>
+                <li><strong>Chá do dia</strong> - infusões naturais que mudam a cada semana.</li>
+
+            </ul>
+            <div class="dica">
+                 Terça é dia de promoção: na compra de qualquer Café,
+                  o segundo sai pela metade do preço!
+                  <hr>
+                  Aguarde novas promoções.
+            </div>
         </section>
        
         <section id="Ambiente">
             <h2>Ambiente</h2>
-        </section>
-        
-        <!-- <section>
-            <h2>Horário</h2>
-        </section>
-        
-        <section>
-            <h2>Reserva</h2>
+            <p>Espaço pensando para seu conforto: Iluminação natural, WI-FI gratuito, 
+                tomadas em todas as mesas.
+            </p>
+            <img class="img" src="Imagem/table-cafe-coffee-texture-restaurant-bar-719306-pxhere.com.jpg" alt="Xícara de café em uma mesa">
         </section>
 
-        <section>
+       
+        
+        <section id="Horario">
+            <h2>Horário de Funcionamento</h2>
+            <table class="horario-funcionamento">
+                <thead>
+                   <tr>
+                    <th>Dia</th>
+                    <th>Horario</th>
+                   </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Segunda a sexta</td>
+                        <td>07h ás 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Sábado</td>
+                        <td>08h ás 22h</td>
+                    </tr>
+                    <tr>
+                        <td>Domingo</td>
+                        <td>08h ás 14h</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <section id="Reserva">
+            <h2>Reserve sua mesa</h2>
+            <p>Preencha o formulario abaixo para fazer sua reserva da sua mesa</p>
+
+            <form action="">
+                 <label for="Nome">Nome:</label>
+                 <input type="text" id="Nome" placeholder="Seu Nome completo">
+                
+                 <label for="Email">E-mail:</label>
+                 <input type="email" id="email" placeholder="Voce@dominio.com">
+                
+                 <label for="pessoas">Numero de pessoas:</label>
+                 <input type="number" id="pessoas" placeholder="Ex: 4">
+                
+                 <label for="obs">Obersevações:</label>
+                 <textarea  id="obs" rows="3" placeholder="Horario desejado, aniversario, etc"></textarea>
+
+                 <button type="submit">Reservar</button>
+
+            </form>
+        </section>
+
+        <section id="Contato">
             <h2>Contato</h2>
-        </section> -->
+        </section>
      </main>
+
+     
 
 
 </body>
